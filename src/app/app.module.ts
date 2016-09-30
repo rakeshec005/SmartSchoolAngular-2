@@ -1,20 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from "@angular/router";
 import { HttpModule } from '@angular/http';
+import { JsonpModule } from '@angular/http';
+import { CommonModule } from '@angular/common';
 
+
+import { APP_ROUTER_PROVIDERS } from './routes';
+
+
+// ALL THE COMPONENT 
 import { AppComponent } from './app.component';
+import { loginComponent } from './login/login.component';
+import { dashboardComponent } from './dashboard/dashboard.component';
+
+
+
+
+// ALL THE providers
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    loginComponent,
+    dashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CommonModule,
+    JsonpModule,
+    RouterModule.forRoot(APP_ROUTER_PROVIDERS)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    console.log("Inside App.Modules Constructor");
+  }
+
+}
