@@ -16,6 +16,8 @@ import { loginComponent } from './login/login.component';
 import { dashboardComponent } from './dashboard/dashboard.component';
 import { sidebarComponent } from './sidebar/sidebar.component';
 import { headerComponent } from './header/header.component';
+import { footerComponent } from './footer/footer.component';
+import { headerNotificationComponent } from './header-notification/headerNotification.component';
 
 
 
@@ -29,7 +31,9 @@ import { headerComponent } from './header/header.component';
     loginComponent,
     dashboardComponent,
     sidebarComponent,
-    headerComponent
+    headerComponent,
+    footerComponent,
+    headerNotificationComponent
   ],
   imports: [
     BrowserModule,

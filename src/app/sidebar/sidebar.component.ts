@@ -1,5 +1,6 @@
 'use strict';
 import { Component} from '@angular/core';
+import { headerComponent } from '../header/header.component';
 
 
 @Component({
