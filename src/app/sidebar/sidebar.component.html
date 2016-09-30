@@ -1,13 +1,14 @@
 <app-header></app-header>
-<button type="button" tooltip="Click to hide sidebar" tooltip-placement="right"
-		tooltip-popup-delay="300"
-		class="btn btn-primary btn-md glyphicon glyphicon-chevron-right animated fadeInLeft"
+<button type="button" tooltip="Click to hide sidebar" tooltip-placement="left"
+		tooltip-popup-delay="20" style="border-radius:0px"
+		class="btn btn-primary btn-md glyphicon glyphicon-chevron-left animated fadeInLeft"
 		 id="menu-toggle" data-toggle="offcanvas"></button>
 <div id="wrapper">
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li>
-                <a href="#"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Dashboard</a>
+                <a href="#"  tooltip="Click to hide sidebar" tooltip-placement="left"
+		tooltip-popup-delay="20"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Dashboard</a>
             </li>
             <li>
                 <a href="#"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Shortcuts</a>
@@ -48,8 +49,6 @@
                 <div class="col-lg-12">
                     <h1>Simple Sidebar</h1>
 
-
-                    <button class="btn btn-default" id="menu-toggle">Toggle Menu</button>
                 </div>
             </div>
         </div>
