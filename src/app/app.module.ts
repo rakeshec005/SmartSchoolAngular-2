@@ -14,6 +14,8 @@ import { APP_ROUTER_PROVIDERS } from './routes';
 import { AppComponent } from './app.component';
 import { loginComponent } from './login/login.component';
 import { dashboardComponent } from './dashboard/dashboard.component';
+import { sidebarComponent } from './sidebar/sidebar.component';
+import { headerComponent } from './header/header.component';
 
 
 
@@ -25,7 +27,9 @@ import { dashboardComponent } from './dashboard/dashboard.component';
   declarations: [
     AppComponent,
     loginComponent,
-    dashboardComponent
+    dashboardComponent,
+    sidebarComponent,
+    headerComponent
   ],
   imports: [
     BrowserModule,

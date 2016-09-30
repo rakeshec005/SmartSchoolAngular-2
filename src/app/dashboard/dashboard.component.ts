@@ -1,5 +1,6 @@
 'use strict';
 import { Component} from '@angular/core';
+import { sidebarComponent } from '../sidebar/sidebar.component';
 
 
 @Component({
