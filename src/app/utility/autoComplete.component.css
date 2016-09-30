@@ -1,0 +1,12 @@
+ul,li{
+text-decoration: none; 
+color: #000000;
+}
+.suggestions{
+    background-color: lightgray;
+    border: 1px black solid;
+    color:#000000;
+    font-size:12px;
+     
+    
+}
