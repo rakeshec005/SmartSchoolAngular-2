@@ -14,7 +14,7 @@ import {roleService} from './services/roleService';
 import {userService} from './services/userService';
 
 
-import { APP_ROUTER_PROVIDERS } from './routes';
+import { APP_ROUTER_PROVIDERS } from './app.routes';
 import { DASHBOARD_ROUTER_PROVIDERS } from './dashboard.routes';
 
 

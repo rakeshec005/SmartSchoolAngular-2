@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes} from '@angular/router';
 import { dashboardComponent } from './dashboard/dashboard.component';
 import {blankComponent} from './blank/blank.component';
 
