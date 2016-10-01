@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 
 
 import { APP_ROUTER_PROVIDERS } from './routes';
+import { DASHBOARD_ROUTER_PROVIDERS } from './dashboard.routes';
 
 
 // ALL THE COMPONENT 
@@ -18,6 +19,8 @@ import { sidebarComponent } from './sidebar/sidebar.component';
 import { headerComponent } from './header/header.component';
 import { footerComponent } from './footer/footer.component';
 import { headerNotificationComponent } from './header-notification/headerNotification.component';
+import { blankComponent } from './blank/blank.component';
+
 
 
 
@@ -33,7 +36,8 @@ import { headerNotificationComponent } from './header-notification/headerNotific
     sidebarComponent,
     headerComponent,
     footerComponent,
-    headerNotificationComponent
+    headerNotificationComponent,
+    blankComponent
   ],
   imports: [
     BrowserModule,

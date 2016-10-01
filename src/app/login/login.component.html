@@ -9,13 +9,13 @@
                     <h3 class="panel-title">Please Sign In</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
+                    <form role="form" (ngSubmit)="doLogin()">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="User Name" name="username" ng-model="username" type="text">
+                                <input class="form-control" placeholder="User Name" name="username"  [(ngModel)]="loginmodel.userName"  type="text">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" ng-model="password" type="password">
+                                <input class="form-control" placeholder="Password" name="password" [(ngModel)]="loginmodel.password" type="password">
                             </div>
                             <div class="checkbox">
                                 <label>
@@ -23,7 +23,7 @@
                                 </label>
                             </div>
                             <!-- Change this to a button or input when using this as a form -->
-                            <input type="submit" class="btn btn-lg btn-success btn-block" (click)="login(username,password)" autofocus value="Login" />
+                            <input type="submit" class="btn btn-lg btn-success btn-block" autofocus value="Login" />
                         </fieldset>
                     </form>
                 </div>
