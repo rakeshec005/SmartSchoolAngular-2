@@ -1,0 +1,44 @@
+.custom_login{
+    background-color:#800000;
+    color:white;
+    border-radius:0px
+}
+input[type='text']{
+     border-radius:0px;
+     border:1px solid #800000;
+} 
+
+input[type='password']{
+     border-radius:0px;
+     border:1px solid #800000;
+} 
+
+
+input[type='checkbox']{
+     border-radius:0px;
+     border:1px solid #800000;
+} 
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #800000;
+}
+
+.panel-red {
+    border-color: #800000;
+    border-radius:0px; 
+}
+
+.panel-red .panel-heading {
+    border-color: #800000;
+    color: #fff;
+    background-color: #800000;
+    border-radius:0px; 
+}
+
+.panel-red a {
+    color: #800000;
+}
+
+.panel-red a:hover {
+    color:#800000;
+}
