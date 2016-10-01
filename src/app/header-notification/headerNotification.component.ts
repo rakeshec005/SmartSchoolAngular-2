@@ -16,6 +16,23 @@ export class headerNotificationComponent {
   constructor(toasterService: ToasterService, private _router: Router) {
     this.toasterService = toasterService;
   }
+  userChoices(choices: string) {
+    switch (choices) {
+      case "profile":
+        this._router.navigate(['/profile']);
+        break;
+      case "upload":
+        this._router.navigate(['/upload']);
+        break;
+      case "setting":
+        this._router.navigate(['/setting']);
+        break;
+      default:
+        alert("Wrong Choices")
+        break;
+    }
+
+  }
 
   doLogout() {
     this._router.navigate(['']);

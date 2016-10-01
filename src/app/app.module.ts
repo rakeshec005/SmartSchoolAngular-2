@@ -28,6 +28,9 @@ import { footerComponent } from './footer/footer.component';
 import { headerNotificationComponent } from './header-notification/headerNotification.component';
 import { blankComponent } from './blank/blank.component';
 import { userComponent } from '../app/user/user.component';
+import { uploadComponent } from './upload/upload.component';
+import { settingComponent } from './setting/setting.component';
+import { profileComponent } from './profile/profile.component';
 
 // User
 
@@ -54,7 +57,10 @@ import {autoCompleteComponent} from './utility/autoComplete.component';
     blankComponent,
     userComponent,
     listUserComponent,
-    autoCompleteComponent
+    autoCompleteComponent,
+    uploadComponent,
+    settingComponent,
+    profileComponent
   ],
   imports: [
     ToasterModule,
