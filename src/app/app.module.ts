@@ -7,6 +7,13 @@ import { JsonpModule } from '@angular/http';
 import { CommonModule } from '@angular/common';
 
 
+/* ALL SERVICE DECLARATION  */
+import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
+import {salaryService} from './services/salaryService';
+import {roleService} from './services/roleService';
+import {userService} from './services/userService';
+
+
 import { APP_ROUTER_PROVIDERS } from './routes';
 import { DASHBOARD_ROUTER_PROVIDERS } from './dashboard.routes';
 
@@ -20,8 +27,15 @@ import { headerComponent } from './header/header.component';
 import { footerComponent } from './footer/footer.component';
 import { headerNotificationComponent } from './header-notification/headerNotification.component';
 import { blankComponent } from './blank/blank.component';
+import { userComponent } from '../app/user/user.component';
 
+// User
 
+import { listUserComponent } from '../app/user/ListUser/listUser.component';
+
+// UtilityComponent
+
+import {autoCompleteComponent} from './utility/autoComplete.component';
 
 
 
@@ -37,9 +51,13 @@ import { blankComponent } from './blank/blank.component';
     headerComponent,
     footerComponent,
     headerNotificationComponent,
-    blankComponent
+    blankComponent,
+    userComponent,
+    listUserComponent,
+    autoCompleteComponent
   ],
   imports: [
+    ToasterModule,
     BrowserModule,
     FormsModule,
     HttpModule,
@@ -47,7 +65,11 @@ import { blankComponent } from './blank/blank.component';
     JsonpModule,
     RouterModule.forRoot(APP_ROUTER_PROVIDERS)
   ],
-  providers: [],
+  providers: [
+    salaryService,
+    roleService,
+    userService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
