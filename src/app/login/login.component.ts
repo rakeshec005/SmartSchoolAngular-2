@@ -2,6 +2,7 @@
 import { Component} from '@angular/core';
 import {loginModel} from '../models/loginModel';
 import {Router} from '@angular/router'
+import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
 
 @Component({
   selector: 'app-login',
@@ -12,8 +13,10 @@ import {Router} from '@angular/router'
 export class loginComponent {
   
   private loginmodel;
-   constructor(private _router: Router){
+  private toasterService: ToasterService;
+   constructor(toasterService: ToasterService,private _router: Router){
      this.loginmodel = new loginModel("", "");
+     this.toasterService = toasterService;
    }
    
 
@@ -24,6 +27,7 @@ export class loginComponent {
        this._router.navigate(['./dashboard']);
      }else{
        this._router.navigate(['']);
+       this.toasterService.pop('error', 'Authentication Failed !!!!', 'Authentication Failed !!!!!!');
      }
 
    }
