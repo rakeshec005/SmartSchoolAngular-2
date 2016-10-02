@@ -36,9 +36,7 @@ import { profileComponent } from './profile/profile.component';
 
 import { listUserComponent } from '../app/user/ListUser/listUser.component';
 
-// UtilityComponent
 
-import {autoCompleteComponent} from './utility/autoComplete.component';
 
 
 
@@ -57,7 +55,6 @@ import {autoCompleteComponent} from './utility/autoComplete.component';
     blankComponent,
     userComponent,
     listUserComponent,
-    autoCompleteComponent,
     uploadComponent,
     settingComponent,
     profileComponent

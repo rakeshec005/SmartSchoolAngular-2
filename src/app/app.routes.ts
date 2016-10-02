@@ -15,7 +15,7 @@ export const APP_ROUTER_PROVIDERS: Routes = [
   { path: 'sidebar', component: sidebarComponent},
   { path: 'upload', component: uploadComponent },
   { path: 'setting', component: settingComponent },
-  { path: 'profile', component: profileComponent },
+  { path: '**',component: loginComponent},
   
 
 ];
