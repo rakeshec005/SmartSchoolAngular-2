@@ -11,8 +11,12 @@ import { CommonModule } from '@angular/common';
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
 
 
+
+import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 
+import { LoginModule } from './login/login.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 
@@ -31,7 +35,10 @@ import { routes } from './app.routes';
     HttpModule,
     CommonModule,
     JsonpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    LoginModule,
+		DashboardModule,
+		
   ],
   providers: [
  
