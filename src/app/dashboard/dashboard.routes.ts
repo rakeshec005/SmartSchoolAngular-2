@@ -1,14 +1,13 @@
 import { Routes} from '@angular/router';
 import { dashboardComponent } from './dashboard.component';
-import {blankComponent} from './blank/blank.component';
+import {BlankComponent} from './blank/blank.component';
 
 
 
 
 
-export const DASHBOARD_ROUTER_PROVIDERS: Routes = [
-  { path: 'blank', component: blankComponent},
-  { path: 'dashboard', component: dashboardComponent}
+export const dashboardRoute: Routes = [
+  
   
   
 ];

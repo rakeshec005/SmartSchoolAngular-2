@@ -1,9 +1,9 @@
 'use strict';
 import { Component, OnInit, OnDestroy} from '@angular/core';
-import {userModel} from '../models/userModel';
-import {userService} from '../services/userService';
-import {roleService} from '../services/roleService';
-import { listUserComponent } from '../../app/user/ListUser/listUser.component';
+import {userModel} from '../../models/userModel';
+import {userService} from '../../services/userService';
+import {roleService} from '../../services/roleService';
+
 
 @Component({
   selector: 'app-user',

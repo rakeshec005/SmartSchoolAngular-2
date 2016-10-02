@@ -1,11 +1,11 @@
 'use strict';
 import { Component, OnInit, OnDestroy} from '@angular/core';
-import {userModel} from '../../models/userModel';
-import {userService} from '../../services/userService';
+import {userModel} from '../../../models/userModel';
+import {userService} from '../../../services/userService';
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
 
 // testing util component
-import {autoCompleteComponent} from "../../utility/autoComplete.Component";
+//import {autoCompleteComponent} from "../../utility/autoComplete.Component";
 
 
 @Component({
