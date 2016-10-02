@@ -10,7 +10,7 @@ import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
   styleUrls: ['login.component.css']
 
 })
-export class loginComponent {
+export class LoginComponent {
   
   private loginmodel;
   private toasterService: ToasterService;
