@@ -4,7 +4,7 @@ import { HeaderComponent } from '../header/header.component';
 
 
 @Component({
-  selector: 'app-sidebar',
+  selector: 'sidebar-cmp',
   templateUrl:"sidebar.component.html",
   styleUrls: ['sidebar.component.css']
 
