@@ -24,7 +24,7 @@ export class LoginComponent {
      console.log(""+this.loginmodel.userName);
      console.log(""+this.loginmodel.password);
      if(this.loginmodel.userName==="admin" &&this.loginmodel.password==="admin" ){
-       this._router.navigate(['./dashboard']);
+       this._router.navigate(['dashboard', 'home']);
      }else{
        this._router.navigate(['']);
        this.toasterService.pop('error', 'Authentication Failed !!!!', 'Authentication Failed !!!!!!');
