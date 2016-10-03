@@ -9,7 +9,7 @@ import {BlankComponent} from './blank/blank.component';
 import { HomeComponent } from './home/home.component';
 import { profileComponent } from './profile/profile.component';
 import { settingComponent } from './setting/setting.component';
-
+import { userPlanComponent } from './userPlan/create/userPlan.component';
 
 
 export const DashboardRoutes: Routes = [{
@@ -19,7 +19,8 @@ export const DashboardRoutes: Routes = [{
             { path: 'home', component: HomeComponent },
             { path: 'profile', component: profileComponent },
             { path: 'setting', component: settingComponent },
-            { path: 'blank', component: BlankComponent }
+            { path: 'blank', component: BlankComponent },
+            { path: 'userPlan', component: userPlanComponent }
 
         ]}
 ];
