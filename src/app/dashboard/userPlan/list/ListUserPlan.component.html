@@ -17,8 +17,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let plan of planLists">
-                        <td>1</td>
+                    <tr *ngFor="let plan of planLists;let index = index">
+                        <td>{{index+1}}</td>
                         <td>{{plan.planName}}</td>
                         <td>{{plan.owner}}</td>
                         <td>{{plan.createdTime | date}}</td>
