@@ -15,7 +15,7 @@ export class ListUserPlanComponent implements OnInit {
   // variable declaration
 
   constructor() {
-  
+   
   }
   ngOnInit() {
   
