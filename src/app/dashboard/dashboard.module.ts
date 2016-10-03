@@ -6,6 +6,8 @@ import { HomeModule } from './home/home.module';
 import { BlankModule } from './blank/blank.module';
 import { ProfileModule } from './profile/profile.module';
 import { SettingModule } from './setting/setting.module';
+import { HeaderModule } from './header/header.module';
+import { HeaderNotificationModule } from './header-notification/headerNotification.module';
 
 import { dashboardComponent } from './index';
 
@@ -18,7 +20,9 @@ import { sidebarComponent } from './sidebar/index';
     HomeModule,
     BlankModule,
     ProfileModule,
-    SettingModule
+    SettingModule,
+    HeaderModule,
+    HeaderNotificationModule
     ],
    declarations: [dashboardComponent, sidebarComponent],
     exports: [dashboardComponent, sidebarComponent]
