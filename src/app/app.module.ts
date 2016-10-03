@@ -25,9 +25,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
-  declarations: [
-  
-  ],
+  declarations: [AppComponent],
   imports: [
     ToasterModule,
     BrowserModule,
@@ -40,9 +38,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 		DashboardModule,
 		
   ],
-  providers: [
- 
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

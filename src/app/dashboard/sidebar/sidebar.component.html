@@ -1,4 +1,4 @@
-<app-header></app-header>
+<!--<app-header></app-header>!-->
 <button type="button" tooltip="Click to hide sidebar" tooltip-placement="left" tooltip-popup-delay="20" style="border-radius:0px"
     class="btn btn-primary btn-md glyphicon glyphicon-chevron-left animated fadeInLeft" id="menu-toggle" data-toggle="offcanvas"></button>
 <div id="wrapper">
@@ -12,7 +12,7 @@
             </li>
             <li>
                 <a [routerLink]="['/blank']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Blank</a>
-                
+
             </li>
             <li>
                 <a [routerLink]="['/user']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Overview</a>
@@ -42,15 +42,5 @@
 
 
         </ul>
-    </div>
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Simple Sidebar</h1>
-                    <router-outlet name="aux"></router-outlet>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
