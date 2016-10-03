@@ -5,20 +5,20 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li>
-                <a href="#" tooltip="Click to hide sidebar" tooltip-placement="left" tooltip-popup-delay="20"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Dashboard</a>
+                <a [routerLink]="['home']" tooltip="Click to hide sidebar" tooltip-placement="left" tooltip-popup-delay="20"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Dashboard</a>
             </li>
             <li>
-                <a href="#"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Shortcuts</a>
+                <a  [routerLink]="['profile']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Profile</a>
             </li>
             <li>
-                <a [routerLink]="['/blank']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Blank</a>
+                <a [routerLink]="['blank']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Blank</a>
 
             </li>
             <li>
-                <a [routerLink]="['/user']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Overview</a>
+                <a [routerLink]="['setting']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Setting</a>
             </li>
             <li>
-                <a href="#"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Events</a>
+                <a [routerLink]="['setting']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Events</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-dashboard fa-fw fa-1x"></i> About</a>
