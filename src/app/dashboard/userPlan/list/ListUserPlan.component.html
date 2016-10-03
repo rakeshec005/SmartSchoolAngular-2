@@ -1,4 +1,4 @@
-<div class="col-lg-6">
+<div class="col-lg-12">
     <div class="panel panel-default">
         <div class="panel-heading">User Plans List</div>
         <div class="panel-body">
@@ -7,13 +7,25 @@
                     <tr>
                         <th>S.No</th>
                         <th>Plan name</th>
+                         <th>Owner</th>
+                         <th>createTime</th>
+                         <th>LinkGenerated</th>
+                         <th>Locked</th>
+                         <th>isComplete</th>
+                         <th>Review</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor="let plan of planLists">
                         <td>1</td>
-                        <td>Plan001</td>
+                        <td>{{plan.planName}}</td>
+                        <td>{{plan.owner}}</td>
+                        <td>{{plan.createdTime | date}}</td>
+                        <td>{{plan.isLinkGenerated}}</td>
+                        <td>{{plan.isLocked}}</td>
+                        <td>{{plan.isUnderReview}}</td>
+                        <td>{{plan.isComplete}}</td>
                         <th>
                             <button class="btn btn-xs btn-success" ng-click="selectUserPlan(userplan)">Select</button>
                             <button class="btn btn-xs btn-warning" ng-click="updateUserPlan(userplan)" data-toggle="tooltip" title="Edit"><i class="fa fa-edit"></i></button>
