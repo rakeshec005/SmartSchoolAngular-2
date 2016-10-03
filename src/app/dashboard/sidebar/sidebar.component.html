@@ -1,46 +1,120 @@
-<app-header></app-header>
-<button type="button" tooltip="Click to hide sidebar" tooltip-placement="left" tooltip-popup-delay="20" style="border-radius:0px"
-    class="btn btn-primary btn-md glyphicon glyphicon-chevron-left animated fadeInLeft" id="menu-toggle" data-toggle="offcanvas"></button>
 <div id="wrapper">
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li>
-                <a [routerLink]="['home']" tooltip="Click to hide sidebar" tooltip-placement="left" tooltip-popup-delay="20"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Dashboard</a>
+    <!---header !---->
+<app-header></app-header>
+<!---header !---->
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="navbar-brand" href="#"><span><img src="../assets/imageedit_1_7636352561.png" height="50px"></span>SCHOOL</a>
             </li>
             <li>
-                <a  [routerLink]="['profile']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Profile</a>
+                <a [routerLink]="['home']"><i class="fa fa-dashboard fa-fw fa-1x"></i> Dashboard</a>
             </li>
             <li>
-                <a [routerLink]="['blank']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Blank</a>
+                <a [routerLink]="['profile']"><i class="fa fa-fw fa-home"></i> Home</a>
+            </li>
+            <li>
+                <a [routerLink]="['blank']"><i class="fa fa-fw fa-folder"></i> About</a>
+            </li>
 
+            <li>
+                <a [routerLink]="['setting']"><i class="fa fa-camera fa-fw"></i> User</a>
             </li>
             <li>
-                <a [routerLink]="['setting']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Setting</a>
+                <a [routerLink]="['setting']"><i class="fa fa-university fa-fw"></i> Role</a>
             </li>
+
             <li>
-                <a [routerLink]="['setting']"> <i class="fa fa-dashboard fa-fw fa-1x"></i> Events</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-dashboard fa-fw fa-1x"></i> About</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-dashboard fa-fw fa-1x"></i> Services</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-dashboard fa-fw fa-1x"></i> Contact</a>
+                <a href="#"><i class="fa fa-fw fa-file-o"></i>CrewType</a>
             </li>
 
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-train fa-fw" aria-hidden="true"></i> Trains <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> List all Trains</a></li>
-                    <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> Train Type</a></li>
+                    <li><a href="#"><i class="fa fa-adjust fa-fw" aria-hidden="true"></i>List all Trains</a></li>
+                    <li><a href="#"><i class="fa fa-adjust fa-fw" aria-hidden="true"></i>Train Type</a></li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Stations <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">List all Stations</a></li>
+                    <li><a href="#">Divisions</a></li>
 
                 </ul>
             </li>
 
 
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> DrivingSection <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">List all DrivingSections</a></li>
+                    <li><a href="#">Create DrivingSection</a></li>
 
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> DrivingDuty <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">List all DrivingDuty</a></li>
+                    <li><a href="#">Create DrivingDuty</a></li>
+
+                </ul>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> RoundTrip <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">List All RoundTrip </a></li>
+                    <li><a href="#">Create RoundTrip</a></li>
+                    <li><a href="#">RoundTrip Analysis</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> CrewLink<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+
+                    <li><a href="#">List All CrewLink</a></li>
+                    <li><a href="#">Create CrewLink</a></li>
+                    <li><a href="#">CrewLink Summary Stations</a></li>
+
+                </ul>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Pilot<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Create Pilot</a></li>
+                    <li><a href="#">Pilot Type </a></li>
+                    <li><a href="#">List of Pilot</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Search<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Find Items</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Improve Suggestions<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Improve Driving Section</a></li>
+                    <li><a href="#">Improve Long Driving Duty</a></li>
+                    <li><a href="#">Improve  Driving Duty With Daily Pilots</a></li>
+                    <li><a href="#">Improve  RoundTrip With Excess OSR</a></li>
+                </ul>
+            </li>
         </ul>
-    </div>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!---<app-footer></app-footer> !-->
 </div>
+<!-- /#wrapper -->
