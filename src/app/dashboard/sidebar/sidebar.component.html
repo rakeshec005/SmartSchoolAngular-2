@@ -1,13 +1,18 @@
 <div id="wrapper">
     <!---header !---->
-<app-header></app-header>
-<!---header !---->
+    <app-header></app-header>
+    <!---header !---->
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
             <li class="sidebar-brand">
                 <a class="navbar-brand" href="#"><span><img src="../assets/imageedit_1_7636352561.png" height="50px"></span>SCHOOL</a>
             </li>
+
+            <li>
+                <a [routerLink]="['userPlan']"><i class="fa fa-dashboard fa-fw fa-1x"></i> UserPlan</a>
+            </li>
+
             <li>
                 <a [routerLink]="['home']"><i class="fa fa-dashboard fa-fw fa-1x"></i> Dashboard</a>
             </li>
