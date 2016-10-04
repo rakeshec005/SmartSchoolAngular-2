@@ -1,9 +1,9 @@
 'use strict';
 import { Component, OnInit, OnDestroy} from '@angular/core';
-import {userModel} from '../../models/userModel';
-import {userService} from '../../services/userService';
-import {roleService} from '../../services/roleService';
-
+import {userModel} from '../../../models/userModel';
+import {userService} from '../../../services/userService';
+import {roleService} from '../../../services/roleService';
+import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
 
 @Component({
   selector: 'app-user',
@@ -18,9 +18,11 @@ export class userComponent implements OnInit {
   private usermodel;
   private rolesList: any;
   private errorString:string;
+  private toasterService: ToasterService;
   
-  constructor(private _http: userService, private _roleHttp:roleService) {
+  constructor(private _http: userService, private _roleHttp:roleService,toasterService: ToasterService) {
   this.usermodel = new userModel("", "", "", "", "", "", "","","",true);
+   this.toasterService = toasterService;
   }
   ngOnInit() {
   this.getRoles();
@@ -47,6 +49,8 @@ export class userComponent implements OnInit {
   saveUser() {
     console.log("" + this.usermodel.username);
     this._http.createUser(this.usermodel);
+    this.toasterService.pop('success', 'User deleted Successfully!!!!', 'User deleted Successfully!!!!!!');
+
 
   }
 

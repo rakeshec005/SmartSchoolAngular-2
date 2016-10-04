@@ -17,6 +17,7 @@ import { SettingModule } from './setting/setting.module';
 import { HeaderModule } from './header/header.module';
 import { HeaderNotificationModule } from './header-notification/headerNotification.module';
 import {UserPlanModule } from  './userPlan/create/userPlan.module';
+import {UserModule } from  './user/CreateUser/user.module';
 
 
 
@@ -38,7 +39,8 @@ import { sidebarComponent } from './sidebar/index';
     SettingModule,
     HeaderModule,
     HeaderNotificationModule,
-    UserPlanModule
+    UserPlanModule,
+    UserModule
     ],
    declarations: [dashboardComponent, sidebarComponent],
     exports: [dashboardComponent, sidebarComponent]
