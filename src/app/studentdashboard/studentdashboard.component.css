@@ -1,0 +1,9 @@
+.main-container{
+	margin-left: 260px;
+	margin-top : 0px;
+	padding:5px;
+	overflow: hidden;
+	height:1100px;
+	/*background: #ECF0F1; */
+	background: #FFF; 
+}

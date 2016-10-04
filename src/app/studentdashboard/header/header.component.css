@@ -1,0 +1,18 @@
+a:link {
+    text-decoration: none!important;
+}
+a:visited {
+    text-decoration: none!important;
+}
+ul.headerlogo{
+list-style-type: none!important;
+margin-top: 5px
+}
+.customstyle{
+font-family: 'Oswald', sans-serif;
+color: maroon!important;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #E7E7E5;
+}

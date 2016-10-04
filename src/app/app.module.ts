@@ -19,7 +19,7 @@ import { LoginModule } from './login/login.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { adminDashboardModule } from './admindashboard/admindashboard.module';
 
-
+import {studentDashboardModule} from './studentdashboard/studentdashboard.module';
 
 
 // ALL THE providers
@@ -37,7 +37,8 @@ import { adminDashboardModule } from './admindashboard/admindashboard.module';
     RouterModule.forRoot(routes),
     LoginModule,
 		DashboardModule,
-    adminDashboardModule
+    adminDashboardModule,
+    studentDashboardModule
 		
   ],
   providers: [],
