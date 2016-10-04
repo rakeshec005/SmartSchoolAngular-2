@@ -17,6 +17,7 @@ import { routes } from './app.routes';
 
 import { LoginModule } from './login/login.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { adminDashboardModule } from './admindashboard/admindashboard.module';
 
 
 
@@ -36,6 +37,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     RouterModule.forRoot(routes),
     LoginModule,
 		DashboardModule,
+    adminDashboardModule
 		
   ],
   providers: [],
